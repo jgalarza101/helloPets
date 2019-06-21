@@ -1,0 +1,126 @@
+/*Pet Profile CSS*/
+body{
+	background-color: #eee;
+}
+
+.row.profile-header{
+	background-color: gray;
+	height: 300px;
+	width: auto;
+	display: block;
+	background-repeat: no-repeat
+	background-position: center;
+}
+
+.profile-settings{
+	height: auto;
+	width: 100%;
+
+}
+
+.puppyface{
+
+	background-color: #f6f6f6;
+	padding: 4px;
+	border: 1px solid #ddd;
+	width: 250px;
+	height: 250px;
+	margin: -93px auto 0 55px;
+}
+
+.puppyface img{
+	width: 250px;
+	height:250px;
+}
+
+.details{
+	
+	font-size: 16px;
+	max-width: 100%;
+	height: auto;
+	display: block;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.details h1{
+	font-size:3em;
+	line-height: 1.5em;
+	font-family: 'Lobster', cursive;
+}
+
+.details h2{
+	font-size: 2.3em;
+	line-height: 0em;
+}
+
+.pet-description{
+	height: auto;
+	font-size: 16px;
+	margin-top: 3em;
+	text-align: justify;
+	background-color: #f6f6f6;
+	font-family: 'Raleway', sans-serif;
+	padding: 3em;
+}
+
+.dash{
+	margin-left: 1em;
+    margin-top: 1em;
+}
+
+.edit{
+	margin-right: 1em;
+    margin-top: 1em;
+}
+
+footer{
+	background-color: #c0c0c0;
+	height: 110px;
+	font-family: 'Raleway', sans-serif;
+	position: relative;
+  	/*width: 100%;*/
+  	bottom: 0;
+  	left: 0;
+  	color: white;
+
+}
+
+.bottom{
+	margin:2.2em 0 1.3em 3.3em;
+
+}
+
+html,
+body {
+  height: 100%;
+  /* The html and body elements cannot have any padding or margin. */
+}
+
+@media (min-width: 769px){
+	.details{
+		margin:-15em auto 0 20em;
+	}
+}
+
+@media screen and (max-width:768px)
+{
+
+	.puppyface{
+		width: 170px;
+		height: 170px;
+		margin: -6em auto -2em;
+	}  
+
+	.details{
+		font-size: 12px;
+		text-align: center;
+	}
+
+	.pet-description{
+		margin-top: 0em;
+		font-size: 14px;
+	}
+
+}
+
+/*end Pet Profile*/

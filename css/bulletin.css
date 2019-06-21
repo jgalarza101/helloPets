@@ -1,0 +1,115 @@
+		body{
+			background-color: #8090a7;
+		}
+
+		.buttons a{
+			font-size: 2em;
+		}
+		.bulletin{
+			margin-bottom: 3em;
+			background-color: #eeefed;
+			/* Add shadows to create the "card" effect */
+			box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+			transition: 0.3s;
+			border-radius: 5px;
+			padding-bottom: 0.1em;
+
+		}
+
+		.bulletin-top-nav{
+			border-top-left-radius: 5px;
+			border-top-right-radius: 5px;
+			background-color: #f8f8f8;
+		}
+
+		.bulletin-content {
+			margin: 1em;
+	    background-color: grey;
+	    height: 600px;
+	    overflow-y: scroll;
+	    border-radius: 10px;
+		}
+
+	  @media screen and (max-width:410px)
+	  {
+	    .bulletin-content {
+	      height: 350px;
+	    }
+	  }
+
+		.bulletin-card{
+			/* Add shadows to create the "card" effect */
+			box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+			transition: 0.3s;
+			border-radius: 5px;
+			background-color: white;
+			padding: 1em 1em;
+			margin: 1em 1em;
+		}
+
+		.bulletin-card-content{
+			margin: 1em;
+		}
+
+		.userName-info{
+			padding: 1em;
+		}
+
+		.pet-img{
+			margin: 1em;
+			float: left;
+		}
+
+		.navbar-header img{
+			margin: 0.5em;
+		}
+
+		.button-filters{
+			padding: 0.5em;
+		}
+
+		#share-buttons img{
+			width: 35px;
+			padding: 5px;
+			border: 0;
+			box-shadow: 0;
+			display: inline;
+		}
+
+		#share-buttons a{
+			font-size: 1em;
+		}
+
+		.clearfix{
+			overflow:auto;
+		}
+
+		footer{
+			background-color: #eeefed;
+			color: black;
+			padding: 1em;
+
+		}
+
+		/* Container holding the image and the text */
+  .containerTextMessage {
+    position: relative;
+    color: white;
+    padding: 0.5em;
+  }
+  .containerTextMessage .chat-body p {
+    margin: 0;
+    color: #777777;
+  }
+  .glyphicon, .chat .glyphicon {
+    margin-right: 5px;
+  }
+
+	.modal-body .bulletin-card{
+		margin: 0.5em;
+	}
+
+	.user-img {
+    height: 100px;
+    width: 100px;
+	}

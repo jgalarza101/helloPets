@@ -1,0 +1,41 @@
+header{
+			text-align:center;
+			padding: 2em 0;
+			background: #62A9E0;
+			margin-bottom: 2em;
+		
+
+		}
+		header h1{
+			font-size:3em;
+			text-transform: uppercase;
+			color: #fff;
+			letter-spacing:2px;
+		}
+		h2{
+			text-align:center;
+		}
+		header h1 a, header h1 a:hover{
+			color: #fff;
+			text-decoration:none;
+		}
+
+		.col-sm-6{
+			width: 50%;
+		}
+
+		.petinfo{
+			text-align: center;
+			margin: auto;
+			display: block;
+		}
+		
+		.error{
+			color:red;
+			font-size: 12px;
+		}
+
+		.buttons{
+			text-align: center;
+			margin-top: 3em;
+		}	
