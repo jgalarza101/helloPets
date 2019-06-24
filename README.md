@@ -1,9 +1,11 @@
 # helloPets
 Pet meet-up web application
 
-HelloPets (name subject to change) is a web-based application helping pet owners arrange playdates for their pets. The application assists pet owners by matching them with other pet owners who want their pets to come into contact and play with other pets.The process is facilitated by getting possible pet owners to come into contact with other pet owners via online event bulletins. A pet owner initiating a playdate for their pet posts a playdate bulletin with the appropriate details regarding the date. Other registered and interested pet owners can then decide to join in on the playdate and send messages to the host. By streamlining the process of setting up playdates, pet owners can be at ease in setting up fun-filled meetings for their beloved pets.  
+HelloPets (name subject to change) is a web-based application helping pet owners arrange playdates for their pets. The application assists pet owners by matching them with other pet owners who want their pets to come into contact and play with other pets.The process is facilitated by getting possible pet owners to come into contact with other pet owners via online event bulletins. A pet owner initiating a playdate for their pet posts a playdate bulletin with the appropriate details regarding the date. Other registered and interested pet owners can then decide to join in on the playdate and send messages to the host. By streamlining the process of setting up playdates, pet owners can be at ease in setting up fun-filled meetings for their beloved pets.
 
-Functionalities:
+Initial database schema is stored in a .jpg file called HelloPetsDBImg
+
+Functionalities to be implemented:
 1. Register and login: A user will be able to register to our web-based application using their first name, last name, email address and password. The user will receive a confirmation email on registration and then will be able to use the combination of email address and password to login to our application. The user will only be able to register one pet per user to the account, listing the pet’s name, breed, and age. A user can also update this information as it changes over time.
 	1.1 Account Creation
 	1.2 Account Modification
