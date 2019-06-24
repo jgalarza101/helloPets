@@ -7,7 +7,7 @@ Initial database schema is stored in a .jpg file called HelloPetsDBImg
 
 Functionalities to be implemented:
 1. Register and login: A user will be able to register to our web-based application using their first name, last name, email address and password. The user will receive a confirmation email on registration and then will be able to use the combination of email address and password to login to our application. The user will only be able to register one pet per user to the account, listing the pet’s name, breed, and age. A user can also update this information as it changes over time.
-	1.1 Account Creation
+	* 1.1 Account Creation
 	1.2 Account Modification
 	1.3 Login
 	1.4 Log-out
