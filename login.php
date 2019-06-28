@@ -50,7 +50,7 @@ include "includes/header.php";
 
 
 <body class="body" style="background-image: url(image/petbackground.jpg); background-repeat: no-repeat; background-attachment: fixed; background-position: center;">
-	<div class="container container-login">
+	<div class="container container-login" style="margin-bottom: 20px;">
 
 		<div class="boxed img-responsive">
 		<header class="text-center">

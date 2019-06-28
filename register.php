@@ -93,14 +93,14 @@ if(isset($_POST['btn-register'])){
 		$img1Content = addslashes(file_get_contents($fileLoc)); // file_get_contents gets the contents of the image to be uploaded to the database
 	}
 	else
-		$img1Err = "Upload A Picture Of Your Pet";
+		$img1Err = "Upload a Picture of Your Pet";
 
 	if(getimagesize($_FILES['Pet_Header']['tmp_name']) !== false){
 		$fileLoc = $_FILES['Pet_Header']['tmp_name'];
 		$img2Content = addslashes(file_get_contents($fileLoc)); // file_get_contents gets the contents of the image to be uploaded to the database
 	}
 	else
-		$img2Err = "Upload Header";
+		$img2Err = "Upload Header Image";
 
 	if($usernameErr=="" && $fnameErr=="" && $lnameErr=="" && $userageErr=="" && $emailErr=="" && $passErr=="" && $petnameErr=="" && $pettypeErr=="" && $petbreedErr=="" && $petageErr=="" && $petdescriptionErr=="" && $img1Err=="" && $img2Err==""){
 		$sql1 = "insert into user(username, First_Name, Last_Name, User_Age, User_Email, Password) values ('$username','$fname','$lname','$userage','$useremail','$passwordEncrypt')";
@@ -133,21 +133,38 @@ if(isset($_POST['btn-register'])){
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 		<link rel="stylesheet" type="text/css" href="css/registrationstyle.css" />
 		<style>
-		label, .submit-button{
-			margin-top: 1em;
-		}
-		span.error{
-			color: red;
-			font-style:italic;
-		}
+			.body{
+				background-image: url(image/cat-background.jpg);
+				background-repeat: no-repeat;
+				background-attachment: fixed;
+				background-position: center;
+				color: white;
+			}
+
+			.container{
+				border-radius: 15px;
+			}
+
+			.form-control{
+				border-radius: 15px;
+			}
+
+			label, .submit-button{
+				margin-top: 1em;
+			}
+
+			span.error{
+				color: rgba(241, 169, 160, 1);
+				font-style:italic;
+			}
 		</style>
 	</head>
-	<body>
-		<header>
-			<h1 class="text-center"> <a href="Login.html"> Hello Pets </a></h1>
+	<body style="background-image: url(image/cat-background.jpg); background-repeat: no-repeat; background-attachment: fixed; background-position: center; color: white;">
+		<header style="background-color:rgba(00, 00, 00, .65);">
+			<h1 class="text-center"> <a href="login.php" style="color: #c5eff7;"> Hello Pets </a></h1>
 		</header>
 
-		<div class="container-fluid">
+		<div class="container-fluid" style="background-color:rgba(00, 00, 00, 0.65); border-radius: 15px; margin: 25px;">
 			<div section ="registrationpage">   
 				<div class="row">
 						<h2 class="text-center"> Registration </h2>
@@ -211,11 +228,11 @@ if(isset($_POST['btn-register'])){
 					<label>Pet Description </label>&nbsp;<span class="error"><?php echo $petdescriptionErr ?></span>
 					<textarea style="height:150px;" placeholder="Enter Pet Description" maxlength="1000" name="Pet_Description" class="form-control" value="<?php echo $petdescription ?>" ></textarea>
 
-					<label> Upload A Picture of Your Pet! 🐶</label>&nbsp;<span class="error">
+					<label> Upload a Picture of Your Pet! 🐶</label>&nbsp;<span class="error">
 					<?php echo $img1Err ?></span>
 					<input type="file" name="Pet_Picture" />
 
-					<label> Upload Your Header</label>&nbsp;<span class="error">
+					<label> Upload Your Header Image</label>&nbsp;<span class="error">
 					<?php echo $img2Err ?></span>
 					<input type="file" name="Pet_Header" />
 			</div>
@@ -223,7 +240,7 @@ if(isset($_POST['btn-register'])){
 
 				<input type="submit" name="btn-register" class="btn btn-success form-control submit-button" />
 
-				<br><br>Already Have An Account?<a href="login.php"> Login Here </a>
+				<br><br>Already Have An Account?<a href="login.php" style="color: #c5eff7;"> Login Here </a>
 				<br><br>
 
 					</form>
